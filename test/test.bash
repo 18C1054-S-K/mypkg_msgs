@@ -3,7 +3,7 @@
 dir=~
 [ "$1" != "" ] && dir="$1"
 
-source $dir/.bashrc
+source /opt/ros/foxy/setup.bash
 
 cd $dir/ros2_ws
 colcon build
