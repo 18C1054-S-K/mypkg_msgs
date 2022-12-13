@@ -3,6 +3,8 @@
 dir=~
 [ "$1" != "" ] && dir="$1"
 
+source $dir/.bashrc
+
 cd $dir/ros2_ws
 colcon build
 [ $? -eq 0 ] || exit 1
